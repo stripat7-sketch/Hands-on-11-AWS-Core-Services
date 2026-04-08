@@ -42,6 +42,38 @@ This lab demonstrates the integration of AWS services for serverless data proces
 - Crawler logs available in CloudWatch Logs
 - No errors during execution
 
+
+## Query Descriptions
+
+### Query 1: Basic Table Exploration
+- Retrieves the first 10 records from the dataset
+- Provides a sample view of the data structure and content
+- Verifies that the table has been properly created and populated
+
+### Query 2: Orders by Product Category
+- Groups data by product category
+- Calculates total number of orders for each category
+- Results sorted in descending order to show highest order volumes first
+
+### Query 3: Revenue and Quantity by Fulfilment Method
+- Analyzes each fulfilment method (Merchant, Amazon, etc.)
+- Calculates total orders, total units sold, and total revenue per method
+- Excludes cancelled and pending orders
+- Results sorted by highest revenue first
+
+### Query 4: Monthly Sales Trend
+- Extracts month from each order date
+- Calculates total orders and total revenue per month
+- Excludes cancelled and pending orders
+- Results sorted chronologically from earliest to latest month
+
+### Query 5: Top 5 Best-Selling SKUs per Category
+- Identifies top 5 SKUs within each product category
+- Ranks SKUs by total revenue generated
+- Shows category, SKU, total revenue, total units sold, and rank position
+- Excludes cancelled orders, pending orders, and zero-quantity orders
+
+
 ## Challenges Faced & Solutions
 
 ### Challenge 1: Table creation errors
